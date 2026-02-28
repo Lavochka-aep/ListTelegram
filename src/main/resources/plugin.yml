@@ -1,0 +1,25 @@
+name: ListTelegram
+version: '1.0-SNAPSHOT'
+main: com.lavochk.listTelegram.ListTelegram
+api-version: '1.21'
+commands:
+  listtelegram:
+    description: "Manage the ListTelegram plugin."
+    aliases: [lt, ltelegram]
+    usage: "/<command> <help|reload|importstats|importvanilla>"
+  link:
+    description: "Links your Minecraft account to your Telegram account."
+    usage: "/<command> <code>"
+permissions:
+  listtelegram.reload:
+    description: "Allows reloading the plugin's configuration."
+    default: op
+  listtelegram.importstats:
+    description: "Allows importing legacy player statistics."
+    default: op
+  listtelegram.importvanilla:
+    description: "Allows importing from the vanilla whitelist.json."
+    default: op
+  listtelegram.help:
+    description: "Allows viewing the plugin's help message."
+    default: op

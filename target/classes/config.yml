@@ -1,0 +1,18 @@
+# Whitelist configuration
+whitelist:
+  enabled: true
+
+# Telegram Bot configuration
+telegram:
+  # Get token from @BotFather in Telegram
+  token: "YOUR_BOT_TOKEN"
+  # Get your chat ID from a bot like @userinfobot
+  admin-chat-id: "YOUR_CHAT_ID"
+  # (Optional) Add chat IDs for moderators who will receive notifications.
+  moderator-chat-ids:
+    # - "MODERATOR_ID_1"
+    # - "MODERATOR_ID_2"
+  # Enter your bot's username (without @)
+  bot-username: "YourBotName"
+  # (Optional) ID of a group chat to bridge with the in-game chat. Leave empty to disable.
+  chat-bridge-group-id: ""
