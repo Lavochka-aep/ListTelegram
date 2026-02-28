@@ -25,7 +25,7 @@ public final class ListTelegram extends JavaPlugin {
         linkManager = new LinkManager(getDataFolder());
         playerDataManager = new PlayerDataManager(this);
 
-        getServer().getPluginManager().registerEvents(new PlayerJoinListener(this, whitelistManager), this);
+        getServer().getPluginManager().registerEvents(new PlayerJoinListener(this, whitelistManager, linkManager), this);
         getServer().getPluginManager().registerEvents(new PlayerStatisticListener(playerDataManager), this);
         getServer().getPluginManager().registerEvents(new ChatBridgeListener(this), this);
 

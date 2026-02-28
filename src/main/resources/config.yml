@@ -2,6 +2,14 @@
 whitelist:
   enabled: true
 
+# Telegram Login configuration (require Telegram account to join)
+telegram-login:
+  # Enable Telegram account as required login method
+  enabled: false
+  # If true - player must link Telegram account to join (only works when enabled)
+  # If false - linking is optional but gives extra protection
+  required: false
+
 # Telegram Bot configuration
 telegram:
   # Get token from @BotFather in Telegram

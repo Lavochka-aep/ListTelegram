@@ -62,6 +62,14 @@ public class LinkManager {
     public boolean isLinked(long telegramId) {
         return getLinkedPlayerName(telegramId) != null;
     }
+    
+    public boolean isPlayerLinked(String playerName) {
+        return linkConfig.contains(PlayerNameUtil.normalize(playerName));
+    }
+    
+    public long getPlayerTelegramId(String playerName) {
+        return linkConfig.getLong(PlayerNameUtil.normalize(playerName), -1);
+    }
 
     public int getLinkedCount() {
         return linkConfig.getKeys(false).size();
